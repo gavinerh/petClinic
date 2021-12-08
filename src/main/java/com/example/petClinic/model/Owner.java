@@ -1,5 +1,5 @@
 package com.example.petClinic.model;
 
-public class Owner {
+public class Owner extends Person{
 
 }
