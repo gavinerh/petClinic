@@ -6,11 +6,18 @@ import java.util.Map;
 import java.util.Set;
 
 public abstract class AbstractMapService<T, ID> {
+<<<<<<< HEAD
 
 	protected Map<ID, T> map = new HashMap<ID, T>();
 	
 	Set<T> findAll(){
 		return new HashSet<T>(map.values());
+=======
+	protected Map<ID, T> map = new HashMap<>();
+	
+	Set<T> findAll(){
+		return new HashSet<>(map.values());
+>>>>>>> fdeb9f9e79ee37f252a74eb141a3c45349de1f46
 	}
 	
 	T findById(ID id) {
@@ -18,7 +25,11 @@ public abstract class AbstractMapService<T, ID> {
 	}
 	
 	T save(ID id, T object) {
+<<<<<<< HEAD
 		map.put(id,  object);
+=======
+		map.put(id, object);
+>>>>>>> fdeb9f9e79ee37f252a74eb141a3c45349de1f46
 		return object;
 	}
 	
